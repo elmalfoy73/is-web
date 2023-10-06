@@ -50,17 +50,31 @@ header {
 }
 
 nav ul {
-    display: inline-block;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px;
 }
 
 nav li {
-    display: inline;
     margin-right: 10px;
 }
 
 nav a {
-    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #333;
 }
+
+nav a:hover {
+    background-color: #555;
+}
+
 
 /* Главное содержимое */
 main {
