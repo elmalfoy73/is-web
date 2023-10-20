@@ -60,7 +60,16 @@ header {
     text-align: left;
 }
 
-nav ul {
+nav {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.menu-container {
+    display: flex;
+}
+
+.menu {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -69,11 +78,11 @@ nav ul {
     margin: 20px;
 }
 
-nav li {
+.menu li {
     margin-right: 10px;
 }
 
-nav a {
+.menu a {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
@@ -82,10 +91,9 @@ nav a {
     background-color: #333;
 }
 
-nav a:hover {
+.menu a:hover {
     background-color: #555;
 }
-
 
 /* Главное содержимое */
 main {
