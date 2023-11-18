@@ -95,6 +95,12 @@ nav {
     background-color: #555;
 }
 
+.active a {
+    background-color: #A6775B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* Главное содержимое */
 main {
     padding: 20px;
@@ -112,6 +118,17 @@ section {
 
 .shop img {
     margin-bottom: 20px;
+}
+
+.photos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.photos li {
+    display: inline-block; /* убираем пустое место между элементами списка */
 }
 
 /* Подписка */
