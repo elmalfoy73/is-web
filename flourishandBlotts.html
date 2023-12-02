@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagon alley</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Добро пожаловать в Косой Переулок!</h1>
+    <nav class="header-nav">
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shops.html">Магазины</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="photos.html">Фотогалерея</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="scr/header-active.js"></script>
+</header>
+<main>
+    <section class="shop">
+        <h1>Flourish and Blotts</h1>
+        <img src="img/Flourish_&_Blotts.jpg" height="500">
+        <p>Самый известный книжный магазин в Косом Переулке. Существует с 1654 года. Основан волшебниками Флоришем и
+            Блоттсом.</p>
+    </section>
+    <h2>Каталог:</h2>
+    <form id="bookCatalogForm">
+        <label for="genre">Тип:</label>
+        <select id="genre" name="genre">
+            <option value=""></option>
+            <option value="Учебник">Учебник</option>
+            <option value="Другое">Другое</option>
+            <!-- добавить другие жанры -->
+        </select>
+        <label for="year">Курс:</label>
+        <input type="number" id="year" name="year"><br>
+        <label for="author">Автор:</label>
+        <input type="text" id="author" name="author"><br>
+        <label for="priceFrom">Цена от:</label>
+        <input type="number" id="priceFrom" name="priceFrom"><br>
+        <label for="priceTo">Цена до:</label>
+        <input type="number" id="priceTo" name="priceTo"><br>
+        <label for="availability">Наличие на складе:</label>
+        <select id="availability" name="availability">
+            <option value=""></option>
+            <option value="есть в наличии">есть в наличии</option>
+            <option value="нет в наличии">нет в наличии</option>
+        </select>
+        <input type="submit" value="Сгенерировать таблицу">
+    </form>
+    <div id="resultsTable"></div>
+    <script src="scr/table.js"></script>
+</main>
+</body>
+
+</html>

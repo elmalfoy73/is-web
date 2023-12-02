@@ -131,6 +131,13 @@ section {
     display: inline-block; /* убираем пустое место между элементами списка */
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
 /* Подписка */
 .newsletter {
     text-align: center;
